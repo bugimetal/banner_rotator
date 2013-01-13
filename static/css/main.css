@@ -1,0 +1,10 @@
+html {}
+body { margin: 0; padding: 0; text-align: center; }
+#page { margin: 0 auto; width: 1024px; text-align: left; }
+
+#header { width: 100%; height: 150px; border: 1px solid gray; border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
+
+#content { width: 100%; margin-top: 10px; }
+#content .left-block { width: 240px; float: left; }
+#content .right-block { float: right; width: 774px; border: 1px solid gray; border-radius: 6px; height: 400px; }

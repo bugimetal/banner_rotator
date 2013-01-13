@@ -1,0 +1,27 @@
+{% load static %}{% get_static_prefix as STATIC_PREFIX %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="{{ STATIC_PREFIX }}css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}/js/slides.min.jquery.js"></script>
+    <title>Banner rotator</title>
+</head>
+<body>
+    <div id="page">
+        <div id="header"></div>
+        <div id="content">
+            <div class="left-block">
+                {% block left_block %}
+                {% endblock %}
+            </div>
+            <div class="right-block">
+                {%  block main_content %}
+                {% endblock %}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{%  block left_block %}
+    <style type="text/css">
+        .slides_container {
+            width: 240px;
+            display: none;
+        }
+        .slides_container div {
+            width: 240px;
+            height: 320px;
+            display: block;
+        }
+    </style>
+    <div id="slides">
+        <div class="slides_container">
+            {% for banner in banner_list %}
+                <div>
+                    <a href="{{ banner.click_tag }}">
+                        <img src="{{ MEDIA_URL }}{{ banner.file }}" alt="">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}js/banner.js"></script>
+{% endblock %}
