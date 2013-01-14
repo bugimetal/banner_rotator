@@ -10,7 +10,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Oleg Baginskiy', 'your_email@example.com'),
+    ('Oleg Baginskiy', 'bugimetal@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -33,7 +33,7 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Kiev'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -51,8 +51,7 @@ USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-#MEDIA_ROOT = related_path('.')
-MEDIA_ROOT = '/Users/bugi/programming/banner_rotator/uploads/'
+MEDIA_ROOT = related_path('uploads')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -128,7 +127,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    'django.contrib.admindocs',
+    #'django.contrib.admindocs',
     'banner',
 )
 

@@ -3,8 +3,6 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.db.models.fields.files import ImageFieldFile
 
-# Create your models here.
-
 
 # I don't know if i should use validator here. Maybe i need to create form?
 def image_validator(image):
@@ -35,4 +33,3 @@ class Banner(models.Model):
 class DayParting(models.Model):
     banner_id = models.ForeignKey(Banner)
     hour = models.CharField(max_length=2, choices=[(repr(i), i) for i in xrange(24)])
-    is_enabled = models.BooleanField()

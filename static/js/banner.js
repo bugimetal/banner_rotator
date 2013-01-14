@@ -3,6 +3,7 @@ $(function(){
         play: 5000,
         preload: false,
         pagination: false,
-        generatePagination: false
+        generatePagination: false,
+        randomize: true
     });
 });

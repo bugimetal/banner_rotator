@@ -10,7 +10,7 @@ def index(request):
     current_day = time.strftime('%Y-%m-%d')
     current_hour = int(time.strftime('%H'))
     available_banners = list(Banner.objects.filter(is_enabled='1', start_date__gte=current_day,
-                                                   end_date__lte=current_day,
+                                                   end_date__gte=current_day,
                                                    dayparting__hour=current_hour).values())
 
     for banner in available_banners:
