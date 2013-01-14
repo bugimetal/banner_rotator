@@ -91,9 +91,10 @@ COPY auth_user_user_permissions (id, user_id, permission_id) FROM stdin;
 --
 
 COPY banner_banner (id, name, is_enabled, file, click_tag, start_date, end_date) FROM stdin;
-2	Second banner working only in first day part	t	images/2.jpg	http://test.com/	2013-01-14	2013-01-31
 1	First banner working all day	t	images/1.jpg	http://test.com/	2013-01-14	2013-01-31
 3	Third banner working only on evening	t	images/3.jpg	http://modnakasta.ua/	2013-01-14	2013-01-31
+4	Fourth banner working only on PM	t	images/4.png	http://modnakasta.ua/	2013-01-14	2013-01-31
+2	Second banner working only in first day part	t	images/2.jpg	http://test.com/	2013-01-14	2013-01-31
 \.
 
 
@@ -114,8 +115,6 @@ COPY banner_dayparting (id, banner_id_id, hour) FROM stdin;
 11	2	9
 12	2	10
 13	2	11
-14	2	12
-15	2	13
 25	1	0
 26	1	1
 27	1	2
@@ -145,6 +144,18 @@ COPY banner_dayparting (id, banner_id_id, hour) FROM stdin;
 51	3	20
 52	3	21
 53	3	22
+55	4	12
+56	4	13
+57	4	14
+58	4	15
+59	4	16
+60	4	17
+61	4	18
+62	4	19
+63	4	20
+64	4	21
+65	4	22
+66	4	23
 \.
 
 

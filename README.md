@@ -5,7 +5,6 @@
     $ psql rotator -U postgres < rotator.sql
     $ python manage.py runserver
 
-## Credentials
-Admin user:
+## Admin credentials
 Login: admin
 Password: test

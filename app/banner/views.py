@@ -1,9 +1,11 @@
 # Create your views here.
 
 import time
-import settings
+
 from django.shortcuts import render_to_response
-from models import Banner
+
+import settings
+from app.banner.models import Banner
 
 
 def index(request):

@@ -1,8 +1,8 @@
 __author__ = 'bugi'
 
 from django.contrib import admin
-from models import Banner
-from models import DayParting
+from app.banner.models import Banner
+from app.banner.models import DayParting
 
 
 class DayPartingInline(admin.StackedInline):
