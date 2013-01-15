@@ -12,8 +12,4 @@ def index(request):
                                                    end_date__gte=current_day,
                                                    dayparting__hour=current_hour).values())
 
-    for banner in available_banners:
-        banner['start_date'] = banner['start_date'].strftime('%Y-%m-%d')
-        banner['end_date'] = banner['end_date'].strftime('%Y-%m-%d')
-
     return render_to_response('banner/index.html', {'banner_list': available_banners})
